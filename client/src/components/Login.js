@@ -8,7 +8,7 @@ function Login({setIsAuth}) {
     const [password, setPassword] = useState("");
 
     const login = () => {
-      Axios.post("http://localhost:3001/login", {
+      Axios.post("http://13.49.229.70:3001/login", {
         username,
         password,
       }).then((res) => {
